@@ -22,6 +22,10 @@
             }
             return codes;
         }
+        public static List<string> GetListFromFile(string textFile)
+        {         
+            return GetListFromFile(textFile, false);
+        }
         public static List<string> GetListFromFile(string textFile, bool includeWhiteSpace)
         {
             List<string> lines = new List<string>();
